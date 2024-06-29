@@ -1,3 +1,10 @@
+> 相较于原作者的版本，这里参考 https://github.com/blinkfox/hexo-theme-matery/issues/119 修复了mathjax在hexo中无法正确渲染多行公式的问题：
+> ```shell
+> echo ">_ 覆盖node_modules中需要修改覆盖的文件 ..."
+> \cp backup/inline.js node_modules/kramed/lib/rules/inline.js
+> ```
+> 脚本中在`npm install`之后新增了这些
+
 # Hexo Deploy GitHub Pages Action
 
 This GitHub action for building and deploying Hexo project to GitHub pages.
