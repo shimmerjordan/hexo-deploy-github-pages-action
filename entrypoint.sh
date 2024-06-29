@@ -53,6 +53,10 @@ done
 echo ">_ Install NPM dependencies ..."
 npm install
 
+echo ">_ 覆盖node_modules中需要修改覆盖的文件 ..."
+unalias cp
+cp backup/inline.js node_modules/kramed/lib/rules/inline.js
+
 echo ">_ Clean cache files ..."
 npx hexo clean
 
